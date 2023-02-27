@@ -10,10 +10,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Peliculas App',
       initialRoute: 'home',
-      routes: {
-        'home': (_) => HomeScreen(),
-        'details': (_) => DetailsScreen()
-      },
+      routes: {'home': (_) => HomeScreen(), 'details': (_) => DetailsScreen()},
+      theme: ThemeData.light()
+          .copyWith(appBarTheme: const AppBarTheme(color: Colors.amber)),
     );
   }
 }
